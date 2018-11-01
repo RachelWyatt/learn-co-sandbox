@@ -9,3 +9,23 @@ The work you do in the Sandbox will be saved from lesson to lesson, and is autom
 Please DO NOT touch this repository in GitHub, as it will affect your Sandbox experience, and potentially cause your work to be out of sync.
 
 To learn more about the Sandbox, please visit http://help.learn.co/ide-in-browser#sandbox.
+
+class Person
+ 
+  def initialize(first_name, last_name)
+    @first_name = first_name
+    @last_name = last_name
+  end
+ 
+  def name=(full_name)
+    first_name, last_name = full_name.split
+    @first_name = first_name
+    @last_name = last_name
+  end
+ 
+  def name
+    "#{@first_name} #{@last_name}".strip
+  end
+ 
+end
+# word_of_the_day
